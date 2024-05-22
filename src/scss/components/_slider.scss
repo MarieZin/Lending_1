@@ -1,0 +1,43 @@
+.swiper {
+    --padding: 10px;
+
+    &-wrapper {
+        padding-bottom: var(--padding);
+    }
+
+    &-slide {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &-button-prev,
+    &-button-next {
+        top: calc(50% - var(--padding));
+        color: var(--color-lime);
+        transform: translateY(-50%);
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: 70px;
+        max-width: 500px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        color: var(--color-black);
+        background-color: var(--color-radical-red);
+        transition: all .6s;
+
+        @media(max-width: $smart) {
+            font-size: 12px;
+        }
+    }
+
+    &__text--black {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}

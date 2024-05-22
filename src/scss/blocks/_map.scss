@@ -1,0 +1,13 @@
+.map {
+    position: relative;
+    
+    &__image {
+        position: relative;
+        top: 0;
+
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

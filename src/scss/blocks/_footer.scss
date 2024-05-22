@@ -1,0 +1,96 @@
+.footer {
+    &__nav {
+        position: relative;
+        margin-bottom: 20px;
+        padding: 10px 5px;
+        background-color: var(--color-radical-red);
+    }
+    
+    &__list {
+        position: relative;
+        display: flex;
+        gap: 20px;
+
+        @media(max-width: $smart) {
+            flex-direction: column;;
+        }
+    }
+
+    &__link {
+        display: block;
+        font: var(--font-subtitle);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color-white);
+        transition: .5s, text-shadow .8s;
+
+        @media (hover: hover) {
+            &:hover {
+                text-shadow: 20px 20px 3px #afff0f5e;
+                color: var(--color-lime);
+            }
+        }
+
+        @media(max-width: $min-tab) {
+            font-size: 16px;
+        }
+    }
+
+    &__contacts {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font: var(--font-subtitle);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color-white);
+        gap: 20px;
+
+        & > * {
+            transition: .5s, text-shadow .8s;
+        }
+
+        @media (hover: hover) {
+            & > *:not(:last-child):hover {
+                text-shadow: 20px 20px 3px #afff0f5e;
+                color: var(--color-lime);
+            }
+        }
+
+        @media(max-width: $min-tab) {
+            font-size: 16px;
+        }
+
+        @media(max-width: $smart) {
+            flex-direction: column;;
+        }
+    }
+
+    &__whatsapp {
+        display: flex;
+        align-items: center;
+        color: inherit;
+        fill: var(--color-white);
+
+        svg{
+            width: 50px;
+            height: 50px;
+
+            @media(max-width: $min-tab) {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                fill: var(--color-lime);
+            }
+        }
+    }
+
+    &__phone {
+        color: inherit;
+    }
+}

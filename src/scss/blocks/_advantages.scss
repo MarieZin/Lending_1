@@ -1,0 +1,104 @@
+.advantages {
+    position: relative;
+
+    &__content {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        flex-direction: column;
+        gap: 55px;
+
+        @media (max-width: $tabl) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__item {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        column-gap: 20px;
+        align-items: end;
+        grid-template-columns: 1fr 30px;
+        padding-bottom: 10px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 120%;
+            height: 2px;
+            background-color: var(--color-white);
+
+            @media (max-width: $tabl) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__subtitle {
+        grid-column: 1/3;
+        padding-bottom: 20px;
+        font: var(--font-subtitle);
+        text-transform: uppercase;
+        color: var(--color-white);
+
+        @media (max-width: $min-tab) {
+            padding-bottom: 0;
+        }
+    }
+
+    &__text {
+        font: var(--font-text);
+        color: var(--color-white);
+    }
+
+    &__number {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 25px;
+        color: var(--color-white);
+    }
+
+    &__image {
+        position: relative;
+
+        @media (max-width: $tabl) {
+            position: absolute;
+            top: 30%;
+            z-index: 1;
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+
+        img {
+            position: relative;
+            left: -255px;
+            top: 0;
+            z-index: 700;
+            max-width: 135%;
+
+            @media (max-width: 1130px) {
+                left: 0;
+                max-width: 100%;
+            }
+        }
+    }
+    
+    &__figure {
+        position: absolute;
+        right: -20%;
+        top: 0;
+        width: 700px;
+        height: 100px;
+        background-color: var(--color-lime);
+        transform: rotate(337deg);
+        transform-origin: top right;
+    }
+}

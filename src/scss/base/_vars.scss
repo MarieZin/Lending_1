@@ -1,0 +1,23 @@
+:root {
+	// цвета
+	--color-black: #151415;
+    --color-white: #faf1e1;
+	--color-radical-red: #fa215e;
+	--color-lime: #aeff0f;
+
+	// отступы
+	--main-offset: 50px;
+	--second-offset: 30px;
+	
+	// шрифты
+	--font-family: 'Montserrat', sans-serif;
+	--font-subtitle: 700 19px var(--font-family);
+	--font-text: 400 16px/1.5 var(--font-family);
+}
+
+// адаптив
+$min-smart: 374px; 
+$smart: 575px; 
+$min-tab: 767px;
+$tabl: 991px;
+$screen: 1024px;

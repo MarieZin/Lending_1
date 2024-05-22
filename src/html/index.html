@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" data-overlayscrollbars-initialize>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Любые типы железобетонных изделий по вашим чертежам. Доставка ЖБИ по всей России.">
+    <meta name="keywords" content="ЖБИ, железобетонные изделия, заказ ЖБИ, заказ железобетонных изделий">
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Лучшее производство ЖБИ, купить ЖБИ</title>
+</head>
+<body>
+    <div class="site-container">
+        @@include('./blocks/header.html')
+        <main class="main">
+            @@include('./blocks/banner.html')
+            @@include('./blocks/about.html')
+            @@include('./blocks/advantages.html')
+            @@include('./blocks/our-works.html')
+            @@include('./blocks/how.html')
+            @@include('./blocks/appeal.html')
+            @@include('./blocks/map.html')
+        </main>
+        @@include('./blocks/footer.html')     
+    </div>
+    
+    @@include('./components/modal.html') 
+    <script src="./vendor.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.site-container {
+    overflow: hidden;
+    background-color: var(--color-black);
+}
+
+// scroll 
+@media(any-hover: none) {
+    .os-scrollbar {
+        display: none;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: var(--main-offset) 15px;
+    max-width: 1400px;
+}
+
+// невидимый текст
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+ }
+
+ .title {
+    position: relative;
+    padding-bottom: 16px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 40px;
+        height: 6px;
+        background-color: var(--color-white);
+        transform: translateX(-50%);
+    }
+ }
+ 
+ // падинг для заголовков
+.second-offset {
+    margin-bottom: var(--second-offset);
+}
+
+
+
+  

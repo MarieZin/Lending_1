@@ -1,0 +1,93 @@
+.appeal {
+    background: linear-gradient( to top, var(--color-black), transparent, var(--color-black)), url(../img/form_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        padding: 100px 15px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 60px;
+
+        @media(max-width: $min-tab) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__form {
+        max-width: 406px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color-white);
+        background-color: #000000ad;
+        gap: 20px;
+    }
+
+    &__question {
+        font-size: 25px;
+        color: var(--color-radical-red);
+        background-color: #0000004f;
+    }
+
+    &__contacts {
+        :not(:last-child){
+            padding-bottom: 10px;
+        }
+
+        & > * {
+            transition: .5s, text-shadow .8s;
+        }
+
+        @media (hover: hover) {
+            & > *:not(:last-child):hover {
+                text-shadow: 20px 20px 3px #afff0f4b;
+                color: var(--color-lime);
+                transform: translateX(10px);
+            }
+        }
+    }
+
+    &__whatsapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: inherit;
+        fill: var(--color-white);
+
+        @media (hover: hover) {
+            &:hover {
+                fill: var(--color-lime);
+            }
+        }
+
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__phone {
+        display: block;
+        color: inherit;
+    }
+}

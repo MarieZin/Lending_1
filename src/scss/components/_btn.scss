@@ -1,0 +1,97 @@
+.btn {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    transition: .4s ease-in-out;
+
+    @media (hover: hover) {
+        &:hover {
+            font-weight: 700;
+            font-size: 17px;
+            color: var(--color-black);
+            background-color: var(--color-lime);
+        }
+
+        &:hover::after {
+            height: 0;
+        }
+
+        &:hover::before {
+            width: 0;
+        }
+
+        & span:hover::before {
+            width: 0;
+        }
+
+        & span:hover::after {
+            height: 0;
+        }
+    
+        &:hover::before,
+        &:hover::after,
+        & span:hover::before,
+        & span:hover::after {
+            background-color: var(--color-radical-red);
+        }
+    }
+
+    span {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &::before,
+    &::after,
+    & span::before,
+    & span::after {
+        content: '';
+        position: absolute;
+        background-color: var(--color-white);
+        transition: .4s ease-in-out;
+    }
+
+    &::before,
+    &::after {
+        right: 0;
+        top: 0;
+    }
+
+    &::before {
+        width: 100%;
+        height: 2px;
+    }
+
+    &::after {
+        width: 2px;
+        height: 100%;
+    }
+
+    & span::before,
+    & span::after {
+        left: 0;
+        bottom: 0;
+    }
+
+    & span::before {
+        width: 100%;
+        height: 2px;
+    }
+
+    & span::after {
+        width: 2px;
+        height: 100%;
+    }
+
+    @media(max-width: 675px){
+        font-size: 14px;
+    }
+}

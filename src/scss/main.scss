@@ -1,0 +1,37 @@
+//Настроить чтобы все файлы одной строкой импортировались - сейчас так не работает
+// @import './blocks/*.scss'; //импортируется все из папки blocks
+// @import './base/*.scss'; //импортируется все из папки blocks
+
+//Сторонние библиотеки
+@import "./vendor/reset.scss";
+@import "./vendor/swiper.min";
+@import "./vendor/overlayscrollbars.min";
+
+//Импорт общих стилей для проекта
+@import "./base/settings.scss"; // настройки проекта
+@import "./base/vars.scss"; // переменные проекта
+
+//Шрифты
+@import "./base/fonts.scss";
+
+//большие компоненты
+@import "./blocks/header";
+@import "./blocks/banner";
+@import "./blocks/about";
+@import "./blocks/advantages";
+@import "./blocks/how";
+@import "./blocks/appeal";
+@import "./blocks/map";
+@import "./blocks/footer";
+
+
+//маленькие компоненты
+@import "./components/burger";
+@import "./components/btn";
+@import "./components/nav";
+@import "./components/slider";
+@import "./components/form";
+@import "./components/modal";
+
+
+
