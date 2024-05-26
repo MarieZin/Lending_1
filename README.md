@@ -1,4 +1,4 @@
-* ## [посетить EngineerGbi](https://www.google.com "Сайт EngineerGbi")
+* ## [посетить EngineerGbi](https://www.engineergbi.ru/ "Сайт EngineerGbi")
 
 * ## Использовались
     - JS, SCSS, HTML, GULP
